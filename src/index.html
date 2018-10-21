@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="stylesheet" href="">-->
+	<!--[if lt IE 9]>
+	<!--<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>-->
+	<![endif]-->
+	<!--<link rel="shortcut icon" href="">-->
+
+	<script type="text/javascript" src="tiny_segmenter-0.2.js" charset="UTF-8"></script>
+	<script>
+		var segmenter = new TinySegmenter();                 // インスタンス生成
+		var segs = segmenter.segment("私の名前は中野です");  // 単語の配列が返る
+		alert(segs.join(" | "));  // 表示
+	</script>
+</head>
+<body>
+</body>
+</html>
